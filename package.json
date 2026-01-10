@@ -1,4 +1,23 @@
 {
+  "name": "node-2025",
+  "version": "1.0.0",
+  "description": "node js learning",
+  "homepage": "https://github.com/Disha-chaudhary/node#readme",
+  "bugs": {
+    "url": "https://github.com/Disha-chaudhary/node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Disha-chaudhary/node.git"
+  },
+  "license": "ISC",
+  "author": "disha",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "dependencies": {
     "colors": "^1.4.0"
   }
