@@ -3,4 +3,8 @@
 // console.log("Hello, World!".green);
 // console.log("Dishaa Chaudharyyyyyyy");
 const fs = require("fs");
-fs.openSync("Secfb","w");
+const fh = fs.openSync("Secfb","w");
+// console.log(fh);
+
+fs.writeFileSync(fh,"we are here to study");
+console.log(fs.readFileSync("Secfb","utf8"));
