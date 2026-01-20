@@ -1,7 +1,7 @@
 
 // var colors = require('colors');
 // console.log("Hello, World!".green);
-// console.log("Dishaa Chaudharyyyyyyy");
+// console.log("Dishaa Chaudharyyyyyyy"); 
 // const fs = require("fs");
 // const fh = fs.openSync("Secfb","w");
 
@@ -14,11 +14,14 @@
 
 // console.log(fs.readFileSync("file1","utf8"));
 const fs = require("fs");
-const fh = fs.openSync("file1","w");
-const fh = fs.openSync("secfb","w");
+
 // console.log(fs.appendFileSync("file1 "," hello my name is disha chaudhary"));
 
-fs.renameSync("file1","file2");
-fs.cpSync("secfb","file1");
-fs.unlinkSync("file2");
+// fs.renameSync("file1","file2");
+// fs.cpSync("secfb","file1");
+// fs.unlinkSync("file2");
+fs.writeFileSync("dummy.txt","hello");
+fs.readFileSync("dummy.txt","utf-8");
+
+
 
