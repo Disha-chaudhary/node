@@ -24,5 +24,16 @@
 // fs.readFileSync("dummy.txt","utf-8");
 
 
-require("./m1");
-require("./m2");
+// require("./m1");
+// require("./m2");
+
+(function(){
+    let name = "harry";
+    console.log(name);
+})();
+
+
+(function(){
+    let name = "garry";
+    console.log(name);
+})();
