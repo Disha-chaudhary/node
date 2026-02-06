@@ -26,14 +26,31 @@
 
 // require("./m1");
 // require("./m2");
+// const crypto = require("crypto");
+// const BeforeExe = Date.now();
+// crypto.pbkdf2Sync("passwordgghgffhgfguyyg","salt",100000,512,"sha512");
+// crypto.pbkdf2Sync("password","salt",100000,512,"sha512");
+// crypto.pbkdf2Sync("password","salt",100000,512,"sha512");
+// crypto.pbkdf2Sync("password","salt",100000,512,"sha512");
 
-(function(){
-    let name = "harry";
-    console.log(name);
-})();
+// crypto.pbkdf2("password","salt",100000,512,"sha512",()=>{
+//     crypto.pbkdf2("password","salt",100000,512,"sha512",()=>{
+//         crypto.pbkdf2("password","salt",100000,512,"sha512",()=>{
+//             console.log(Date.now() - BeforeExe);
+//         });
+//     });
+// });
 
 
-(function(){
-    let name = "garry";
-    console.log(name);
-})();
+
+// (function f1(){
+//     let name = "harry";
+//     console.log(name);
+// })();
+
+
+// (function(f1){
+//     let name = "garry";
+//     console.log(name);
+// })();
+const Events = require("events");
