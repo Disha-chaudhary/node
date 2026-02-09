@@ -53,4 +53,28 @@
 //     let name = "garry";
 //     console.log(name);
 // })();
-const Events = require("events");
+
+//-------------------------------------------------------------------------------------------------------------
+// const Events = require("events");
+
+// const myEmitter = new EventEmitter();
+
+// myEmitter.on('click',(number)=>{
+//     console.log("event started with number " + number);
+// }) 
+// myEmitter.emit('click',101);
+
+//------------------------------------------------------------------------------------------------------------
+
+const events = require("events");
+const EventEmitter = new events.EventEmitter();
+
+const eventhandler = (extra_cheese, olive) => {
+    console.log("Start preparing pizza 🍕");
+    console.log("Extra cheese:", extra_cheese);
+    console.log("Olive:", olive);
+};
+
+EventEmitter.on("order_pizza", eventhandler);
+
+EventEmitter.emit("order_pizza", true, false);
