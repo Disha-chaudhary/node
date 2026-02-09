@@ -7,4 +7,6 @@ http.createServer((req, resp) => {
     resp.write("<h1>hello this is node js server</h1>");
 
     resp.end();
-}).listen(5001);
+}).listen(5004, () => {
+    console.log("server running at http://localhost:5004");
+}); 
